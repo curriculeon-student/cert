@@ -1,0 +1,5 @@
+theme: minima
+logo_url: './logo.png'
+signature_url: './digital-signature.png'
+signer_name: 'Leon Christopher Hunter'
+repository: "update-later"
