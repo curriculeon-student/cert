@@ -9,6 +9,9 @@ layout: default
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Certificate of Completion</title>
 <style>
+    .site-header, .site-footer {
+        display: none;
+    }
     body {
         font-family: 'Arial', sans-serif;
         margin: 40px;
@@ -57,9 +60,9 @@ layout: default
             <img src="{{ site.logo_url }}" alt="Bootcamp Logo" style="width:100px;">
             <h1 class="certificate-title">Certificate of Completion</h1>
         </div>
-        <h2 class="recipient-name">{{ page.name }}</h2>
+        <h2 class="recipient-name">{{ page.graduateName }}</h2>
         <p class="body-text">
-            This is to certify that <strong>{{ page.name }}</strong> has successfully completed the <strong>{{ page.course_name }}</strong> on <strong>{{ page.date }}</strong>.
+            This is to certify that <strong>{{ page.graduateName }}</strong> has successfully completed the <strong>{{ page.courseName }}</strong> on <strong>{{ page.date }}</strong>.
         </p>
         <div class="signature">
             <img src="{{ site.signature_url }}" alt="Signature" style="width:150px;">
