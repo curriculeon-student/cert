@@ -1,63 +1,15 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Certificate of Completion</title>
-<style>
-    .site-header, .site-footer {
-        display: none;
-    }
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 40px;
-        background: #f9f9f9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .certificate {
-        border: 5px solid #ddd;
-        padding: 20px;
-        background: white;
-        width: 80%;
-        max-width: 600px;
-    }
-    .certificate-header {
-        text-align: center;
-    }
-    .certificate-title {
-        font-size: 24px;
-        font-weight: bold;
-    }
-    .recipient-name {
-        font-size: 20px;
-        margin: 20px 0;
-        text-align: center;
-    }
-    .body-text {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .signature {
-        margin-top: 30px;
-        text-align: right;
-        font-style: italic;
-    }
-    .date {
-        text-align: right;
-        font-style: italic;
-    }
-</style>
+<link rel="stylesheet" href="{{ site.baseurl }}/resources/utils/css/style.css">
 </head>
 <body>
     <div class="certificate">
         <div class="certificate-header">
-            <img src="{{ site.logo_url }}" alt="Bootcamp Logo" style="width:100px;">
+            <img src="{{ site.baseurl }}/resources/utils/img/logo.png" alt="Bootcamp Logo" style="width:100px;">
             <h1 class="certificate-title">Certificate of Completion</h1>
         </div>
         <h2 class="recipient-name">{{ page.graduateName }}</h2>
@@ -65,7 +17,7 @@ layout: default
             This is to certify that <strong>{{ page.graduateName }}</strong> has successfully completed the <strong>{{ page.courseName }}</strong> on <strong>{{ page.date }}</strong>.
         </p>
         <div class="signature">
-            <img src="{{ site.signature_url }}" alt="Signature" style="width:150px;">
+            <img src="{{ site.baseurl }}/resources/utils/img/digital-signature.png" alt="Signature" style="width:150px;">
             <br>
             {{ site.signer_name }}
         </div>
