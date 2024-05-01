@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: overview
 description: Curriculeon Curriculum Assets
 ---
 
